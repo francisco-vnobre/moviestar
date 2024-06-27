@@ -8,16 +8,14 @@
 
     $flassMessage = $message->getMessage();
 
-    if(!empty($flassMessage["msg"])){
-        // Limpar
+    if(!empty($flassMessage["msg"])) {
+        // Limpar a mensagem
         $message->clearMessage();
     }
 
     $userDao = new UserDAO($conn, $BASE_URL);
 
     $userData = $userDao->verifyToken(false);
-
-    print_r($userData); exit;
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
