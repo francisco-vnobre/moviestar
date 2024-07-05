@@ -96,22 +96,24 @@
         $user = $this->findByToken($token);
 
         if($user) {
-          return $user;
-        } else if($protected) {
+           return $user;
+         } 
+         else if($protected) {
+
+          // Redireciona usuário não autenticado
+          $this->message->setMessage("Faça a autenticação para acessar esta página!", "error", "index.php");
+
+         }
+
+        } 
+        else if($protected) {
 
           // Redireciona usuário não autenticado
           $this->message->setMessage("Faça a autenticação para acessar esta página!", "error", "index.php");
 
         }
 
-      } else if($protected) {
-
-        // Redireciona usuário não autenticado
-        $this->message->setMessage("Faça a autenticação para acessar esta página!", "error", "index.php");
-
       }
-
-    }
 
     public function setTokenToSession($token, $redirect = true) {
 
