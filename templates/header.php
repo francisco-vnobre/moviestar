@@ -66,6 +66,10 @@
                     <li class="nav-item">
                         <a href="logout.php" class="nav-link">Sair</a>
                     </li>
+                    <?php else: ?>
+                    <li class="nav-item">
+                        <a href="auth.php" class="nav-link">Entrar / Cadastrar</a>
+                    </li>
                     <?php endif; ?>
                 </ul>
             </div>
