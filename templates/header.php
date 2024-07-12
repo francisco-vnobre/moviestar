@@ -34,7 +34,7 @@
 <body>
     <header>
         <nav id="main-navbar" class="navbar navbar-expand-lg">
-            <a href="/" class="navbar-brand">
+            <a href="<?= $BASE_URL ?>/" class="navbar-brand">
                 <img src="img/logo.svg" alt="MovieStar" id="logo">
                 <span id="moviestar-title">MovieStar</span>
             </a>
