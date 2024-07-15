@@ -218,7 +218,7 @@ color: #999;
 max-width: 400px;
 }
 
-.form-control.disabled {
+.form-control .disabled {
 background-color: #BBB;
 }
 
